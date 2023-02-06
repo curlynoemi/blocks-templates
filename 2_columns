@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>2 Columns</title>
+    <meta name="author" content="Curlynoemi " />
+    <meta name="description"content="For more templates: https://github.com/curlynoemi"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial;
+        margin: 0;
+      }
+      .col-2 {
+        float: left;
+        width: 50%;
+        padding: 50px;
+      }
+      @media screen and (max-width: 600px) {
+        .col-2 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="col-2" style="background-color: #ffc6c6">
+        <h2>Column 1</h2>
+      </div>
+      <div class="col-2" style="background-color: #ffe0e0">
+        <h2>Column 2</h2>
+      </div>
+    </div>
+  </body>
+</html>
