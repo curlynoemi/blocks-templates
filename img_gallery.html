@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Image Gallery</title>
+    <meta name="author" content="Curlynoemi" />
+    <meta name="description" content="Responsive Image Gallery" />
+
+    <style>
+      .gallery {
+        line-height: 0;
+        column-count: 5;
+        column-gap: 5px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 5px;
+      }
+      @media (max-width: 1200px) {
+        .gallery {
+          column-count: 4;
+          column-count: 4;
+          column-count: 4;
+        }
+      }
+      @media (max-width: 1000px) {
+        .gallery {
+          column-count: 3;
+          column-count: 3;
+          column-count: 3;
+        }
+      }
+      @media (max-width: 800px) {
+        .gallery {
+          column-count: 2;
+          column-count: 2;
+          column-count: 2;
+        }
+      }
+      @media (max-width: 400px) {
+        .gallery {
+          column-count: 1;
+          column-count: 1;
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery">
+      <img src="mountain.jpg" />
+      <img src="mountain.jpg" />
+    </div>
+  </body>
+</html>
