@@ -1,13 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>FAQ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      * {
-        font-family: Arial;
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elements Templates</title>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+    *,
+    *::before,
+    ::after {
+      padding: 0;
+      margin: 0;
+    }
+
+    html {
+      font-size: 100%;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-size: 0.94rem;
+      font-family: Poppins, Noto Sans, sans-serif;
+      text-align: center;
+      line-height: 1.5;
+      background: #f8f8f8;
+    }
+
+    main {
+      padding: 12vh 0;
+    }
+
+    img[alt="Linktree photo"] {
+      --scale: 164px;
+      width: var(--scale);
+      height: var(--scale);
+      border-radius: 24px;
+    }
+
+    img[alt="Linktree photo"] + h3 {
+      margin: 16px 0 0px;
+    }
+
+    .linktree-nav {
+      margin: 40px auto 0;
+      width: 95%;
+      max-width: 700px;
+    }
+
+    .linktree-nav ul {
+      display: grid;
+      gap: 1rem;
+      list-style: none;
+    }
+
+    .linktree-nav a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .linktree-box {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      padding: 12px 12px;
+      border-radius: 10px;
+      background: #fff;
+    }
+
+    .linktree-box .icon-box {
+      --scale: 56px;
+      width: var(--scale);
+      height: var(--scale);
+      font-size: 1.25rem;
+      background: hsl(var(--color), 30%);
+      color: hsl(var(--color));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      margin-right: 16px;
+    }
+
+    @media (min-width: 600px) {
+      .linktree-nav ul {
+        grid-template-columns: repeat(2, 1fr);
       }
-    </style>
-    <body>
-      <button <a style="text-decoration:none" target="_blank" href=></button>
-    </body>
+    }
+  </style>
+  <body>
+    <main>
+      <header>
+        <img
+          src="IMG/bluecat.jpg"
+          alt="Linktree photo"
+          href="https://github.com/curlynoemi"
+        />
+        <h3>
+          Elements Templates • by
+          <a href="https://github.com/curlynoemi">Curlynoemi</a>
+        </h3>
+        <span
+          >Responsive HTML & CSS Elements Templates for Beginners. Library in
+          continue developing.
+          <br />
+          <br />
+          In the past few days, I've been working on a free HTML & CSS template
+          library. <br />
+          Don't worry it is still in its early stages and is gonna be always
+          updated with new content. <br />
+          Hope they can be useful and lead to wonderful creations. 😊
+        </span>
+      </header>
+      <nav class="linktree-nav">
+        <ul>
+          <!----- LINK ----->
+          <li>
+            <a href="2_columns.html">
+              <div class="linktree-box">
+                <div class="icon-box" style="--color: 195, 53%, 79%">2️⃣</div>
+                <div>
+                  <h5>Layout</h5>
+                  <span>2 Columns layout</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!----- LINK ----->
+          <li>
+            <a href="FAQ.html">
+              <div class="linktree-box">
+                <div class="icon-box" style="--color: 0, 100%, 50%">❓</div>
+                <div>
+                  <h5>Section</h5>
+                  <span>FAQ Section</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!----- LINK ----->
+          <li>
+            <a href="img_gallery.html">
+              <div class="linktree-box">
+                <div class="icon-box" style="--color: 44, 100%, 53%">🖼️</div>
+                <div>
+                  <h5>Section</h5>
+                  <span>Image gallery</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!----- LINK ----->
+          <li>
+            <a href="responsive_hamburger_navbar.html">
+              <div class="linktree-box" style="--color: 110, 91%, 40%">
+                <div class="icon-box">🍔</div>
+                <div>
+                  <h5>Menu</h5>
+                  <span>Responsive Hamburger Navbar</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!----- LINK ----->
+          <li>
+            <a href="scroll_to_top.html">
+              <div class="linktree-box">
+                <div class="icon-box" style="--color: 195, 53%, 79%">⬆️</div>
+                <div>
+                  <h5>Button</h5>
+                  <span>Scroll To Top</span>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!----- LINK ----->
+          <li>
+            <a href="cards.html">
+              <div class="linktree-box">
+                <div class="icon-box" style="--color: 0, 100%, 50%">🎴</div>
+                <div>
+                  <h5>Layout</h5>
+                  <span>Cards Layout</span>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </main>
+  </body>
+</html>
